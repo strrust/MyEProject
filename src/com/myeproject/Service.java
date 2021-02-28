@@ -53,7 +53,6 @@ public class Service {
         if (!AcceptedRaceIDs.contains(RID))
         {
             System.out.println("Wrong RaceID!");
-            input.close();
             return;
         }
         System.out.print("Enter horse number (1 - 7): ");
@@ -61,7 +60,6 @@ public class Service {
         if (Horse < 0 || Horse > 7)
         {
             System.out.println("Wrong horse number!");
-            input.close();
             return;
         }
         List<Client> ClientList = DC.getAllEntities();
