@@ -1,4 +1,6 @@
-package com.myeproject;
+package main.java;
+
+import main.java.service.Service;
 
 import java.util.*;
 

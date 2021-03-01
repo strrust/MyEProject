@@ -1,4 +1,6 @@
-package com.myeproject;
+package main.java.dao;
+
+import main.java.entities.Race;
 
 import java.sql.*;
 import java.util.ArrayList;

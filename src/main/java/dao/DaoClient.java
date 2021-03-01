@@ -1,4 +1,6 @@
-package com.myeproject;
+package main.java.dao;
+
+import main.java.entities.Client;
 
 import java.util.*;
 import java.sql.*;

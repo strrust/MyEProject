@@ -1,9 +1,16 @@
-package com.myeproject;
+package main.java.service;
+
+import main.java.dao.DaoBet;
+import main.java.dao.DaoClient;
+import main.java.dao.DaoRace;
+import main.java.entities.Bet;
+import main.java.entities.Client;
+import main.java.entities.Race;
 
 import java.util.*;
 
 public class Service {
-    Service() {}
+    public Service() {}
 
     public void getAllClients()
     {

@@ -1,4 +1,4 @@
-package com.myeproject;
+package main.java.entities;
 
 public class Bet {
     private int Amount;
@@ -6,7 +6,7 @@ public class Bet {
     private int ClientID;
     private int RaceID;
 
-    Bet (int A, int H, int CID, int RID)
+    public Bet (int A, int H, int CID, int RID)
     {
         this.Amount = A;
         this.Horse = H;

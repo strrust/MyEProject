@@ -1,10 +1,10 @@
-package com.myeproject;
+package main.java.entities;
 
 public class Client {
     private String ClientName;
     private int ClientID;
 
-    Client(String CN, Integer CID)
+    public Client(String CN, Integer CID)
     {
         this.ClientID = CID;
         this.ClientName = CN;
