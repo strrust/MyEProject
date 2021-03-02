@@ -1,8 +1,7 @@
-package test.java.service;
+package test.java.dao;
 
 import main.java.dao.DaoRace;
 import main.java.entities.Race;
-import main.java.service.Service;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -10,11 +9,10 @@ import java.util.List;
 
 import static org.testng.Assert.*;
 
-public class ServiceGetAllRacesTest {
-    private Service S = new Service();
+public class DaoRaceTest {
+
     @Test
-    public void testGetAllRaces() {
-        //S.getAllRaces();
+    public void testGetAllEntities() {
         DaoRace DR = new DaoRace();
         List<Race> resList = DR.getAllEntities();
         Assert.assertNotEquals(resList.size(), 0);

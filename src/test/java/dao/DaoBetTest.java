@@ -1,10 +1,9 @@
-package test.java.service;
+package test.java.dao;
 
 import main.java.dao.DaoBet;
 import main.java.dao.DaoClient;
 import main.java.entities.Bet;
 import main.java.entities.Client;
-import main.java.service.Service;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -12,12 +11,10 @@ import java.util.List;
 
 import static org.testng.Assert.*;
 
-public class ServiceMakeBetTest {
-    private Service S = new Service();
+public class DaoBetTest {
+
     @Test
-    public void testMakeBet() {
-        //проверка того, что ставка с указанными параметрами есть в бд
-        //S.makeBet()
+    public void testAddEntity() {
         DaoClient DC = new DaoClient();
         DaoBet DB = new DaoBet();
         int Amount = 1000;
@@ -41,5 +38,12 @@ public class ServiceMakeBetTest {
         }
         DC.deleteEntity(TC);
         Assert.assertTrue(Check);
+    }
+
+    @Test
+    public void testGetAllEntities() {
+        DaoBet DB = new DaoBet();
+        List<Bet> resList = DB.getAllEntities();
+        Assert.assertNotEquals(resList.size(), 0);
     }
 }
